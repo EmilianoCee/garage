@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.garage-outside {
+    background-image: url(/images/garage-door.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.garage-door {
+    border: solid red 2px;
+    
+}

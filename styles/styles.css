@@ -3,14 +3,14 @@ body {
     background-color: antiquewhite;
 }
 
-/* .garage-outside {
-    background-image: url(/images/nodoor.jpg);
+.garage-outside {
+    background-image: url(/images/opendoor.jpg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: 6;
-} */
+}
 
 .above-door {
     background-color: aqua;

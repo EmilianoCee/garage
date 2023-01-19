@@ -1,38 +1,80 @@
 body {
     margin: 0;
-    background-color: antiquewhite;
+    background: rgb(243, 186, 113) ;
+    /* url(/images/thinmints.jpg) repeat-y 50% 0% */
 }
 
-.garage-outside {
+.garage-and-friends {
+    display: flex;
+    justify-content: center;
+}
+
+/* .garage-outside {
     background-image: url(/images/opendoor.jpg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: 6;
+} */
+
+/* .garage-outside-parts {
+    display: block;
+} */
+
+.garage-outside-top {
+    background-image: url(/images/house-top.jpg);
+    position: fixed;
+    width: 452px;
+    height: 537px;
+    left: 480px;
+    
 }
 
-.above-door {
-    background-color: aqua;
+.garage-outside-right {
+    background-image: url(/images/house-right.jpg);
+    position: fixed;
+    width: 480px;
+    height: 1139px;
+    left: 930px;
+}
+
+.garage-outside-bottom {
+    background-image: url(/images/house-bottom.jpg);
+    position: fixed;
+    width: 452px;
+    height: 282px;
+    top: 856px;
+    left: 480px;
+}
+
+.garage-outside-left {
+    background-image: url(/images/house-left.jpg);
+    position: fixed;
+    width: 480px;
+    height: 1139px;
+}
+
+/* .above-door {
     width: 100%;
-    height: 12vh;
-    z-index: -1;
-}   
+    height: 536px;
+}    */
 
 .garage-entrance {
-    border: solid red 1px;
-    width: 78.5%;
+    width: 450px;
     /* height: 87%; */
     /* padding-top: 7.25%; */
-    margin: 0 9.75% ;
+    margin: 0 480px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .garage-door {
-    background-image: url(/images/onlydoor.jpg);
+    margin-top: 536px;
+    background-image: url(/images/garage-door.jpg);
     background-size: cover;
-    padding-top: 7.25%;
-    width: 100%;
-    height: 80vh;
+    width: 450px;
+    height: 316px;
     display: flex;
     justify-content: center;
     align-items: center;

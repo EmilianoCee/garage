@@ -3,30 +3,36 @@ body {
     background-color: antiquewhite;
 }
 
-.garage-outside {
+/* .garage-outside {
     background-image: url(/images/nodoor.jpg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 4;
-}
+    z-index: 6;
+} */
 
-.garage-opening {
-    position: absolute;
+.above-door {
+    background-color: aqua;
+    width: 100%;
+    height: 12vh;
+    z-index: -1;
+}   
+
+.garage-entrance {
     border: solid red 1px;
     width: 78.5%;
-    height: 87%;
-    /* margin: 99px 126px; */
-    margin-top: 94px;
-    margin-left: 125px;
+    /* height: 87%; */
+    /* padding-top: 7.25%; */
+    margin: 0 9.75% ;
 }
 
 .garage-door {
     background-image: url(/images/onlydoor.jpg);
     background-size: cover;
+    padding-top: 7.25%;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,4 +48,29 @@ h1 {
     /* color: rgb(101,80,37); */
     font-size: 5rem;
     text-shadow: black 1px 1px;
+}
+
+.lightbulb {
+    top: 10px   ;
+    position: sticky;
+}
+
+.content h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    height: 200vh;
+    background-color: rgb(82,95,52);
+    margin: 16px;
+    color: white;
+}
+
+.what {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
 }

@@ -1,40 +1,27 @@
 body {
     margin: 0;
-    background: rgb(243, 186, 113) ;
-    /* url(/images/thinmints.jpg) repeat-y 50% 0% */
+    background: rgb(243, 186, 113) url(/images/neighborhood.jpg) repeat-x fixed 1392px 0;
+    z-index: 4;
 }
 
 .garage-and-friends {
-    display: flex;
-    justify-content: center;
+    background: url(/images/flop.jpg) repeat-x fixed 0 1139px ;
+    z-index: 1;
 }
-
-/* .garage-outside {
-    background-image: url(/images/opendoor.jpg);
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 6;
-} */
-
-/* .garage-outside-parts {
-    display: block;
-} */
 
 .garage-outside-top {
     background-image: url(/images/house-top.jpg);
     position: fixed;
     width: 452px;
-    height: 537px;
+    height: 536px;
     left: 480px;
-    
 }
 
 .garage-outside-right {
     background-image: url(/images/house-right.jpg);
     position: fixed;
-    width: 480px;
+    background-position: right;
+    width: 478px;
     height: 1139px;
     left: 930px;
 }
@@ -55,15 +42,8 @@ body {
     height: 1139px;
 }
 
-/* .above-door {
-    width: 100%;
-    height: 536px;
-}    */
-
 .garage-entrance {
     width: 450px;
-    /* height: 87%; */
-    /* padding-top: 7.25%; */
     margin: 0 480px;
     display: flex;
     flex-wrap: wrap;
@@ -83,17 +63,17 @@ body {
 
 .garage-door * {
     margin: 0;
-    color: rgb(82,95,52);
+    /* color: rgb(82,95,52); */
 }
 
 h1 {
-    /* color: rgb(101,80,37); */
+    color: rgb(101,80,37);
     font-size: 5rem;
     text-shadow: black 1px 1px;
 }
 
 .lightbulb {
-    top: 10px   ;
+    top: 0px;
     position: sticky;
 }
 
@@ -104,9 +84,9 @@ h1 {
 
 .content {
     height: 200vh;
-    background-color: rgb(82,95,52);
-    margin: 16px;
+    background-color: rgb(129,150,171);
     color: white;
+    z-index: -1;
 }
 
 .what {

@@ -1,19 +1,33 @@
 body {
     margin: 0;
-    background: rgb(243, 186, 113) url(/images/neighborhood.jpg) repeat-x fixed 1392px 0;
+    background: rgb(243, 186, 113) url(/images/trees.jpg) fixed;
+    /* background: rgb(1, 80, 21) url(/images/home.png); */
+    box-sizing: border-box;
+}
+
+/* .garage-and-friends {
+    background: url(/images/flop.jpg) repeat-x fixed 0 1139px ;
+    z-index: 1;
+} */
+
+.garage-outside-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: url(/images/home.png) no-repeat 50% 0%;
+    width: 100%;
+    height: 100%;
+    min-height: 1139px;
     z-index: 4;
 }
 
-.garage-and-friends {
-    background: url(/images/flop.jpg) repeat-x fixed 0 1139px ;
-    z-index: 1;
-}
-
-.garage-outside-top {
+/* .garage-outside-top {
     background-image: url(/images/house-top.jpg);
     position: fixed;
     width: 452px;
     height: 536px;
+
+    top: 0;
     left: 480px;
     z-index: 3;
 }
@@ -32,7 +46,7 @@ body {
     position: fixed;
     width: 452px;
     height: 282px;
-    top: 856px;
+    bottom: 0px;
     left: 480px;
 }
 
@@ -41,25 +55,26 @@ body {
     position: fixed;
     width: 480px;
     height: 1139px;
-}
+} */
 
 .garage-entrance {
-    width: 450px;
-    margin: 0 480px;
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    padding-top: 536px;
+    width: 460px;
+    left: 20px;
+    margin: 0 auto;  
 }
 
 .garage-door {
-    margin-top: 536px;
-    background-image: url(/images/garage-door.jpg);
+    background-image: url(/images/doorwithnobrim.jpg);
     background-size: cover;
-    width: 450px;
+    width: 460px;
     height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
     z-index: 2;
 }
 
@@ -69,14 +84,18 @@ body {
 }
 
 .garage-inside {
-    margin-top: 560px;
-    width: 450px;
-    height: 300px;
-    background-image: url(/images/sweatshop.jpg);
+    width: 500px;
+    height: 340px;
+    top: 536px;
+    background-image: url(/images/garageg-insides.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position-x: 7px; */
     position: fixed;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 h1 {
@@ -86,8 +105,10 @@ h1 {
 }
 
 .light-source {
-    width: 32px;
+    width: 40px;
 }
+
+
 
 .light-source img {
     width: 100%;
@@ -95,8 +116,7 @@ h1 {
 }
 
 .void {
-    height: 375px;
-    background-color: rgb(255, 251, 0);
+    height: 380px;
     z-index: -1;
 }
 

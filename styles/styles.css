@@ -1,16 +1,10 @@
 body {
     margin: 0;
     background: rgb(243, 186, 113) url(/images/trees.jpg) fixed;
-    /* background: rgb(1, 80, 21) url(/images/home.png); */
     box-sizing: border-box;
 }
 
-/* .garage-and-friends {
-    background: url(/images/flop.jpg) repeat-x fixed 0 1139px ;
-    z-index: 1;
-} */
-
-.garage-outside-top {
+.garage-outside {
     position: fixed;
     top: 0;
     right: 0;
@@ -20,42 +14,6 @@ body {
     min-height: 1139px;
     z-index: 4;
 }
-
-/* .garage-outside-top {
-    background-image: url(/images/house-top.jpg);
-    position: fixed;
-    width: 452px;
-    height: 536px;
-
-    top: 0;
-    left: 480px;
-    z-index: 3;
-}
-
-.garage-outside-right {
-    background-image: url(/images/house-right.jpg);
-    position: fixed;
-    background-position: right;
-    width: 478px;
-    height: 1139px;
-    left: 930px;
-}
-
-.garage-outside-bottom {
-    background-image: url(/images/house-bottom.jpg);
-    position: fixed;
-    width: 452px;
-    height: 282px;
-    bottom: 0px;
-    left: 480px;
-}
-
-.garage-outside-left {
-    background-image: url(/images/house-left.jpg);
-    position: fixed;
-    width: 480px;
-    height: 1139px;
-} */
 
 .garage-entrance {
     position: relative;
@@ -80,7 +38,6 @@ body {
 
 .garage-door * {
     margin: 0;
-    /* color: rgb(82,95,52); */
 }
 
 .garage-inside {
@@ -90,7 +47,6 @@ body {
     background-image: url(/images/garageg-insides.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-position-x: 7px; */
     position: fixed;
     display: flex;
     justify-content: center;
@@ -104,22 +60,40 @@ h1 {
     text-shadow: black 1px 1px;
 }
 
-.light-source {
-    width: 40px;
+.garage-light {
+    background-color: rgba(0, 0, 0, 0.884);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
 }
 
+.light-bulb {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #feffb750;
+}
 
-
-.light-source img {
+#bulb {
     width: 100%;
-    cursor: pointer;
+    height: 100%;
+    opacity: .5;
+    border-radius: 50%;
+    box-shadow: #feffb7 0 0 50px 15px;
 }
 
 .void {
-    height: 380px;
-    z-index: -1;
+    height: calc(100vh - 560px);
 }
 
-@media screen and (max-width: 800px) {
-    
+/* @media screen and (min-height: 950px) {
+    .void {
+        height: 650px;
+    }
+
+    .light-source {
+        background-color: aqua;
+    }
 }

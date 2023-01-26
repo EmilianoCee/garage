@@ -4,6 +4,9 @@ const garageLight = document.getElementById("garage-light");
 const arrow = document.getElementById("arrow");
 const toppy = document.getElementById("tippy");
 
+
+lightArea.addEventListener('click', lightOn)
+lightArea.addEventListener('')
 console.log(toppy.style);
 
 function glowHover() {
@@ -22,4 +25,6 @@ function lightOn() {
     bulb.style.opacity = 1;
     garageLight.style.backgroundColor = "#00000000";
     arrow.style.display = "block";
+    lightArea.removeAttribute("onmouseover")
+    lightArea.removeAttribute("onmouseout")
 }
